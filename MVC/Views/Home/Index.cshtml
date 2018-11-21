@@ -7,7 +7,8 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <!--Link não direcionando para adicionar dados-->
+    @Html.ActionLink("Create New", "AdicionarPedidos")
 </p>
 <table class="table">
     <tr>
@@ -41,7 +42,8 @@
             @Html.DisplayFor(modelItem => item.DataEntrega)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdPedido }) |
+            <!--Link não chamando o EditarPedidos-->
+            @Html.ActionLink("Edit", "EditarPedidos", new { id=item.IdPedido }) |
             @Html.ActionLink("Details", "Details", new { id=item.IdPedido }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.IdPedido })
         </td>

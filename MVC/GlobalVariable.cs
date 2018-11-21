@@ -13,7 +13,8 @@ namespace MVC
 
         static GlobalVariable()
         {
-            WebApiClient.BaseAddress = new Uri("http://localhost:1728/Help");
+            //A URL do projeto está errada
+            WebApiClient.BaseAddress = new Uri("http://localhost:1728/api/");
             WebApiClient.DefaultRequestHeaders.Clear();
             WebApiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
